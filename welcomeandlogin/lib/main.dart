@@ -25,7 +25,17 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: <Widget>[],
+        children: <Widget>[
+          Expanded(
+              flex: 3,
+              child: Container(
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/perosn.jpeg"),
+                        fit: BoxFit.cover)),
+              )),
+          Expanded(child: Column())
+        ],
       ),
     );
   }
