@@ -24,6 +24,11 @@ class MyApp extends StatelessWidget {
             ),
             headline:
                 TextStyle(color: Colors.white, fontWeight: FontWeight.normal)),
+        inputDecorationTheme: InputDecorationTheme(
+          enabledBorder: UnderlineInputBorder(
+            borderSide: BorderSide(color: Colors.white.withOpacity(.2)),
+          ),
+        ),
       ),
       home: WelcomeScreen(),
     );
